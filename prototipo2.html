@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Prototipo 2</title>
+    <!--Clase computer propetys-->
+</head>
+<body>
+    <div class="containter">
+        <div id="main">
+            <h1 class="text-center">Prototipo2</h1>
+            <hr>
+            <h2>Listado de Tareas</h2>
+            <input type="text" placeholder="Escriba su tarea" v-model="tarea">
+            <button v-on:click="agregarTarea()">Agregar Tarea</button>
+            <hr>
+            <ul>
+                <li v-for="item in tareas">
+                    {{item.titulo}}
+                </li>
+            </ul>   
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script src="codigo2.js"></script>
+</body>
+</html>
