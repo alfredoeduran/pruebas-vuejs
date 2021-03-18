@@ -12,10 +12,16 @@
     <div class="containter">
         <div id="main">
             <h1 class="text-center">Prototipo2</h1>
+            <p>Se renderiza un listado de tareas dondes se podran añadir mas introduciendolos en el formulario</p>
+            <br>
+            <p>Se utilizo methods para crear instancias </p>
+
             <hr>
             <h2>Listado de Tareas</h2>
             <input type="text" placeholder="Escriba su tarea" v-model="tarea">
+            <!--Con v-model llamamos a la propiedad "tarea" que se encuentra dentro del modelo 'data'-->
             <button v-on:click="agregarTarea()">Agregar Tarea</button>
+            <!-- v-on esta casi en desuso se puede colocar tambien @click-->
             <hr>
             <ul>
                 <li v-for="item in tareas">
